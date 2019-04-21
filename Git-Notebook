@@ -11,4 +11,4 @@ git reset --hard HEAD^
 git reset --hard <gitID>
 git diff HEAD -- <filename>
 git checkout -- <filename>
-
+git reset HEAD <filename>
