@@ -12,3 +12,6 @@ git reset --hard <gitID>
 git diff HEAD -- <filename>
 git checkout -- <filename>
 git reset HEAD <filename>
+git remote add origin git@github.com:coder-xsj/learngit.git
+git push -u origin master
+git push origin master
