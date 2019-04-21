@@ -1,0 +1,13 @@
+git init
+git add <filename1>,<filename2>...<filenamen>
+git add -A
+git status
+git diff 
+git commit -m "message"
+git log
+git log --pretty=oneline
+git reflog
+git reset --hard HEAD^
+git reset --hard <gitID>
+git diff HEAD -- <filename>
+
