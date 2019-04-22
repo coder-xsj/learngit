@@ -18,3 +18,13 @@ git push origin master
 rm <filename>
 git rm <filename>
 git commit -m "message"
+git clone git@github.com:coder-xsj/gitskiils.git
+
+git checkout -b <pointname>
+== git branch dev and git checkout dev
+git branch
+git checkout master
+git merge <pointname>
+git branch -d dev
+git branch
+------------------
