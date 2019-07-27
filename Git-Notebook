@@ -1,30 +1,50 @@
-git init
-git add <filename1>,<filename2>...<filenamen>
-git add -A
-git status
-git diff 
-git commit -m "message"
-git log
-git log --pretty=oneline
-git reflog
-git reset --hard HEAD^
-git reset --hard <gitID>
-git diff HEAD -- <filename>
-git checkout -- <filename>
-git reset HEAD <filename>
-git remote add origin git@github.com:coder-xsj/learngit.git
-git push -u origin master
-git push origin master
+自报家门
+git config --global user.name "name"
+git config --global user.email "email"
+
+git init 初始化仓库
+
+git add <filename1>,<filename2>...<filenamen>  把working区文件提交到stage区中
+git add -A   工作区中的文件一起提交到stage中
+
+git status 查看工作区状态
+git diff 比较不同
+git commit -m "message" 把stage中的文件提交到版本库中
+
+git log 提交记录
+git log --pretty=oneline 清晰的提交记录
+git reflog  记录你的每一次命令
+git reset --hard HEAD^ 回退到上一版本
+git reset --hard <commitID> 会退到commitID版本
+git diff HEAD -- <filename> 工作区和最新版本库的区别
+git checkout -- <filename> 回到最近一次git commit 或 git add后的状态
+	本质意思为：将版本库里的版本替换工作区的版本
+git reset HEAD <filename> 撤销掉暂存区的修改
+
+本地仓库推送到远程仓库
+git remote add origin git@github.com:coder-xsj/learngit.git 将本地库与远程库关联起来 
+git push -u origin master 本地一次性推送到远程库，-u参数，并把本地master和远程master关联起来
+
+git push origin master 把本地的master分之的最新修改推送至GitHub
+
+删除版本库中文件的操作
 rm <filename>
 git rm <filename>
 git commit -m "message"
+
+从版本库中恢复文件
+git checkout -- <filename>
+
+本地仓库克隆远程仓库
 git clone git@github.com:coder-xsj/gitskiils.git
 
 git checkout -b <pointname>
-== git branch dev and git checkout dev
-git branch
+相当于 
+git branch dev + git checkout dev
+
 git checkout master
 git merge <pointname>
 git branch -d dev
 git branch
 ------------------
+I learn git again
